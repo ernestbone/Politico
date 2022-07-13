@@ -1,0 +1,271 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.main-wrapper {
+    min-height: 80vh;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0; 
+}
+
+.button_1{
+    border: none;
+    height: 38px;
+    background: #e8491d;
+    padding: 0 20px 0 20px;
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+/* Header */
+header{
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+
+
+header #title h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: -50px;
+}
+header .current a{
+     color: #e8491d;
+     font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 400px;
+    background-color: #ccc;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter{
+    padding: 15px;
+    color:#ffffff;
+    background: #35424a;
+}
+
+#news{
+    display: flex;
+    justify-content: center;
+}
+
+#news form{
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+/* boxes */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+ display: flex;
+ justify-content: center;
+}
+
+#boxes .box #box{
+    padding: 50px;
+    text-align: center;
+    width: 30%;
+}
+#boxes .box #box img{
+   width: 90px;
+}
+
+#boxes .box #box a{
+    text-decoration:none;
+    color: #7699DC;
+ }
+ #boxes .box #box a:hover{
+    font-weight: bolder;
+    color: #94BDCD;
+ }
+
+ /* Footer */
+ footer{
+     padding: 20px;
+     margin-top: 20px;
+     color: #ffffff;
+     background-color: #e8491d;
+     text-align: center;
+ }
+
+/* media queries */
+@media(max-width: 768px){
+    header #title,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header nav{
+        margin-left: 50px;
+    }
+    #newsletter input[type="email"]{
+        padding: 4px;
+        height: 25px;
+        width: 100px;
+    }
+}
+
+/* Registration */
+.form-container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.form-container .registration{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.form-container .registration::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #35424a;
+}
+
+.form-container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0px 12px 0;
+}
+
+.user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+    
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: black;
+}
+
+form .button{
+    height: 45px;
+    margin: 10px 0;
+   width: 100%;
+   
+}
+form .button input{
+    height: 100%;
+    width: 102%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: linear-gradient(300deg, #e8491d, #ccc);
+    
+}
+
+form .button input:hover{
+    background: linear-gradient(-300deg, #e8491d, #ccc);
+}
+
+@media(max-width: 784px){
+    .form-container{
+        max-width: 80%;
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 80%;
+    }
+    form .button input{
+        width: 83%;
+        
+    }
+}
+

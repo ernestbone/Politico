@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="./css/dashboard.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <span class="nav-item">User dashboard</span>
+        </a></li>
+        <li><a href="index.html">
+            <i class="fas fa-home" aria-hidden="true"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-comment"></i>
+          <span class="nav-item">Message</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-database"></i>
+          <span class="nav-item">Report</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-chart-bar"></i>
+          <span class="nav-item">Results</span>
+        </a></li>
+        <li><a href="#">
+          <i class="fas fa-cog"></i>
+          <span class="nav-item">Setting</span>
+        </a></li>
+
+        <li><a href="#" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+
+
+    <section class="main">
+      <div class="users">
+        <div class="card">
+          <h4>Vote your candidate</h4>
+          <button>Vote</button>
+        </div>
+        <div class="card">
+          <h4>Check election results</h4>
+          <button>View</button>
+        </div>
+        
+      <section class="political">
+        <div class="political-list">
+          <h1>Your votes</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Office</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Candidate Name</td>
+                <td>Office name</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </div>
+
+</body>
+</html>
